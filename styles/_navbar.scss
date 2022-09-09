@@ -33,11 +33,13 @@
         .nav-item {
             margin-right: 48px;
             a {
+                padding-bottom: 10px;
+                display: block;
                 text-decoration: none;
-                color: #000;
+                transition: all 0.3s ease-in-out;
                 &:hover {
-                    color: #000;
-                    text-decoration: underline;
+                    color: #ef5518;
+                    transform: translate(0, 4px);
                 }
             }
         }
@@ -47,5 +49,15 @@
         grid-column-end: span 1;
         align-self: center;
         justify-self: end;
+        a {
+            padding-bottom: 10px;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #ef5518;
+                transform: translate(0, 4px);
+            }
+        }
     }
 }
