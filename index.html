@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARDPOINT</title>
+    <link rel="shortcut icon" href="./assets/svg/hardpoint_white.svg" type="image/x-icon">
     <script src="scripts/pixi.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cursor.css">
 </head>
 <body>
     <canvas id="noise"></canvas>
     <canvas id="gradient-canvas" data-transition-in></canvas>
+
+    <!-- <div class="cursor-base">
+        <div class="cursor-fill cursor-hide"></div>
+    </div> -->
+    <div class="cursor-base">
+        <div class="cursor-fill"></div>
+    </div>
+
     <div class="site-container">
         <div class="section-nav">
                 <div class="logo">
@@ -39,69 +49,88 @@
         </div>
         <div class="layout-main">
             <div class="hero">
-                <p>SOFTWARE ENGINEER</p>
+                <p>KEN LIN</p>
+                <p>// SOFTWARE ENGINEER</p>
                 <p>// FRONT-END DEVELOPER</p>
             </div>
-            <div class="numbers number1">
-                <p>01 /</p>
+            <div class="navigation-links">
+                <div class="item">
+                    <div class="numbers number1">
+                        <p>01 /</p>
+                    </div>
+                    <div class="link link-item1">
+                        <p class="arrow">></p>
+                        <a href="#">PROJECTS</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="numbers number1">
+                        <p>02 /</p>
+                    </div>
+                    <div class="link link-item1">
+                        <p class="arrow">></p>
+                        <a href="#">ABOUT</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="numbers">
+                        <p>03 /</p>
+                    </div>
+                    <div class="link">
+                        <p class="arrow">></p>
+                        <a href="#">CONTACT</a>
+                    </div>
+                </div>
             </div>
-            <div class="numbers number2">
-                <p>02 /</p>
+            <div class="portrait">
+                <img src="./assets/images/portrait_temp.jpg" alt="">
             </div>
-            <div class="numbers number3">
-                <p>03 /</p>
-            </div>
-            <div class="link link-item1">
-                <a href="#">PROJECTS</a>
-            </div>
-            <div class="link link-item2">
-                <a href="#">ABOUT</a>
-            </div>
-            <div class="link link-item3">
-                <a href="#">CONTACT</a>
-            </div>
+            <!-- <div class="icons-bottom">
+                <img src="./assets/svg/dotpoint.svg" alt="">
+            </div> -->
         </div>
         <div class="footer">
-            <div class="text-left">
-                <p>Ken Lin<br>Software Engineer</p>
-            </div>
-            <div class="social behance">
-                <a href="">
+            <!-- <div class="text-left">
+                <p>Developed by Ken Lin<br>Design by Ken Lin</p>
+            </div> -->
+            <!-- <div class="social behance">
+                <a href="https://www.behance.net/lken">
                     <img src="./assets/svg/behance.svg" alt="">
                     <p>/lken</p>
                 </a>
-            </div>
+            </div> -->
             <div class="social github">
-                <a href="">
+                <a href="https://github.com/Solarlake">
                     <img src="./assets/svg/github.svg" alt="">
                     <p>Solarlake</p>
                 </a>
             </div>
             <div class="social instagram">
-                <a href="">
+                <a href="https://www.instagram.com/sol.xyz/">
                     <img src="./assets/svg/instagram.svg" alt="">
                     <p>@sol.xyz</p>
                 </a>
             </div>
             <div class="social linkedin">
-                <a href="">
+                <a href="https://www.linkedin.com/in/lken/">
                     <img src="./assets/svg/linkedin.svg" alt="">
                     <p>/in/lken</p>
                 </a>
             </div>
-            <div class="social twitter">
+            <!-- <div class="social twitter">
                 <a href="">
                     <img src="./assets/svg/twitter.svg" alt="">
                     <p>@sol_xyz</p>
                 </a>
-            </div>
+            </div> -->
             <div class="text-right">
-                <p>Developed by Ken Lin<br>Design by Ken Lin</p>
+                <img src="./assets/svg/dotpoint.svg" alt="">
             </div>
         </div>
     </div>
     
-    <script type="module" src="scripts/background.js"></script>
+    <script src="./scripts/cursor.js"></script>
+    <script type="module" src="./scripts/background.js"></script>
 </body>
 </html>
 
