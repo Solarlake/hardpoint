@@ -3,7 +3,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 * ::-moz-selection {
@@ -17,6 +16,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: "NHaasGrotesk", Helvetica, sans-serif;
   color: #27302d;
 }
@@ -36,8 +36,13 @@ a {
   src: url(../assets/fonts/NHaasGroteskDSStd-65Md.otf) format("opentype");
 }
 
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url(../assets/fonts/IBMPlexMono-Regular.otf) format("opentype");
+}
+
 #gradient-canvas {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: -2;
@@ -64,7 +69,7 @@ a {
 }
 
 #noise {
-  position: absolute;
+  position: fixed;
   opacity: 0.25;
   z-index: -1;
   pointer-events: none;
@@ -235,6 +240,8 @@ a {
 .layout-main .navigation-links {
   -ms-grid-row: 2;
       grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   -ms-grid-column-span: 5;
       grid-column-end: span 5;
   display: -webkit-box;
@@ -318,34 +325,6 @@ a {
           transform-origin: top left;
 }
 
-.layout-main .icons-bottom {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  -ms-grid-column: 8;
-      grid-column-start: 8;
-  -ms-grid-column-span: 1;
-      grid-column-end: span 1;
-  -ms-grid-row-span: 1;
-      grid-row-end: span 1;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.layout-main .icons-bottom img {
-  -webkit-filter: invert(11%) sepia(6%) saturate(1629%) hue-rotate(109deg) brightness(97%) contrast(83%);
-          filter: invert(11%) sepia(6%) saturate(1629%) hue-rotate(109deg) brightness(97%) contrast(83%);
-  width: 100%;
-  -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-
 .footer {
   display: -ms-grid;
   display: grid;
@@ -421,4 +400,4 @@ a {
           filter: invert(11%) sepia(6%) saturate(1629%) hue-rotate(109deg) brightness(97%) contrast(83%);
   width: 78px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=homepage_style.css.map */

@@ -4,14 +4,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     ::selection {
-        background-color: #27302d;
-        color: #effaf0;
+        background-color: $text-main;
+        color: $background-light;
     }
 }
 
 body {
+    // overflow: hidden;
+    overflow-x: hidden;
     font-family: "NHaasGrotesk", Helvetica, sans-serif;
     color: $text-main;
 }
@@ -22,6 +23,7 @@ a {
 }
 
 .site-container {
+    // overflow: hidden;
     margin-left: 100px;
     margin-right: 100px;
 }

@@ -1,5 +1,5 @@
 #gradient-canvas {
-    position: absolute;
+    position: fixed;
     width:100%;
     height:100%;
     z-index: -2;
@@ -7,7 +7,7 @@
     --gradient-color-2: #3f1d7b; 
     --gradient-color-3: #ff2cad;  
     --gradient-color-4: #8108eb; */
-    
+
     /* --gradient-color-1: #000000; 
     --gradient-color-2: #212c8a; 
     --gradient-color-3: #9b324a;  
@@ -34,13 +34,13 @@
     // --gradient-color-3: #000000;
     // --gradient-color-4: #3c737d;
 
-  }
+}
 
 #noise {
-	position: absolute;
-	opacity: 0.25;
-	z-index: -1;
-	pointer-events: none;
-	user-select: none;
-	mix-blend-mode: overlay;
+    position: fixed;
+    opacity: 0.25;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+    mix-blend-mode: overlay;
 }

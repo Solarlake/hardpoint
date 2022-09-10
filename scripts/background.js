@@ -1,7 +1,9 @@
+// MESH GRADIENT
 import { Gradient } from './Gradient.js'
 const gradient = new Gradient()
 gradient.initGradient('#gradient-canvas')
 
+// NOISE
 const canvas = document.getElementById('noise'), ctx = canvas.getContext('2d');
 canvas.width = canvas.height = 128;
 resize();
