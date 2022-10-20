@@ -11,11 +11,13 @@
 }
 
 body {
+    color: $text-main;
+    background-color: $background-light;
     // overflow: hidden;
     overflow-x: hidden;
-    font-family: "EverettMedium", Helvetica, sans-serif;
+    // font-family: "EverettMedium", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     // font-variation-settings: 'wght' 800;
-    color: $text-main;
 }
 
 a {
@@ -25,6 +27,5 @@ a {
 
 .site-container {
     // overflow: hidden;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 15rem;
 }

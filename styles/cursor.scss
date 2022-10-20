@@ -17,7 +17,7 @@
         height: 10px;
         // background-color: #ffffff;
         backdrop-filter: invert(1) hue-rotate(180deg); // contrast(2)
-        // backdrop-filter: saturate(1.8) brightness(0.9) blur(1px);
+        
 
         border-radius: 0%;
         opacity: 1;
@@ -27,6 +27,9 @@
             transform: scale(0) rotate(45deg);
         }
         &.cursor-large {
+            // backdrop-filter: saturate(1.8) brightness(0.9) blur(0.5px);
+            backdrop-filter: brightness(0.8) blur(0.5px);
+
             transition: opacity 0.5s cubic-bezier(0.33, 1, 0.68, 1), transform 0.5s cubic-bezier(0.33, 1, 0.68, 1), border-radius 0.5s cubic-bezier(0.61, 1, 0.88, 1);
             transform: scale(5) rotate(270deg);
             border-radius: 50%;

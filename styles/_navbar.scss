@@ -1,48 +1,54 @@
-.section-nav {
-    padding-top: 42px;
-    padding-bottom: 42px;
-    font-size: 22px;
+.navbar {
+    max-width: fit-content;
+    min-width: 460px;
+    height: 72px;
+    background-color: #27302daa;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 12px;
+    backdrop-filter: blur(1px);
 
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    border-bottom: 1px solid $text-main;
-    
     .logo {
-        grid-column-end: span 4;
-        align-self: center;
-        justify-self: start;
+        width: 13.5%;
+        height: 80%;
+        border-radius: 8px;
+        background-color: $text-main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         a {
-            display: flex;
-            align-items: center;
             .logo-icon {
-                width: 32px;
-                height: 32px;
-                filter: invert(11%) sepia(6%) saturate(1629%) hue-rotate(109deg) brightness(97%) contrast(83%);
-            }
-            .logo-text {
-                font-size: 24px;
-                margin-left: 8px;
+                width: 24px;
+                filter: invert(91%) sepia(18%) saturate(38%) hue-rotate(343deg) brightness(98%) contrast(96%);
             }
         }
-        
     }
 
-    .navigation {
-        grid-column-end: span 3;
-        align-self: center;
+    .button-container {
+        margin-right: 1.3%;
+    }
+
+    .labels-container {
+        width: 82%;
+        height: 80%;
         display: flex;
-        justify-content: flex-start;
-        .nav-item {
-            margin-right: 48px;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $text-main;
+        border-radius: 8px;
+
+        .link-item {
             a {
-                padding-top: 5px;
-                padding-bottom: 5px;
-                display: block;
-                text-decoration: none;
-                transition: all 0.3s ease-in-out;                
+                font-size: 14px;
+                color: $background-light;
+                font-weight: 600;
             }
 
             &:hover {
@@ -54,7 +60,7 @@
 
             :after {
                 content: '';
-                background-color: $text-main;
+                background-color: $background-light;
                 display: block;
                 top: 0px;
                 width: 100%;
@@ -65,35 +71,5 @@
             }
         }
     }
-
-    .contact {
-        grid-column-end: span 1;
-        align-self: center;
-        justify-self: end;
-        a {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            display: block;
-            text-decoration: none;
-        }
-
-        &:hover {
-            :after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
-            }
-        }
-        
-        :after {
-            content: '';
-            background-color: $text-main;
-            display: block;
-            top: 0px;
-            width: 100%;
-            height: 1px;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.5s $ease-in-out-quart;
-        }
-    }
+    
 }

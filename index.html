@@ -6,109 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARDPOINT</title>
     <link rel="shortcut icon" href="./assets/svg/hardpoint_white.svg" type="image/x-icon">
-    <script src="scripts/pixi.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pixi-filters@latest/dist/pixi-filters.js"></script>
     <link rel="stylesheet" href="styles/cursor.css">
+    <link rel="stylesheet" href="styles/global_style.css">
     <link rel="stylesheet" href="styles/homepage_style.css">
 </head>
 <body>
-    <canvas id="noise"></canvas>
-    <canvas id="gradient-canvas" data-transition-in></canvas>
-
     <div class="cursor-base">
         <div class="cursor-fill cursor-hide"></div>
     </div>
-
     <div class="site-container">
-        <div class="section-nav">
+        <div class="main-grid">
+            <div class="menu">
                 <div class="logo">
-                    <a href="/">
-                        <img src="./assets/svg/hardpoint.svg" alt="HARDPOINT icon" class="logo-icon">
-                        <p class="logo-text">HARDPOINT</p>
-                    </a>
+                    <img src="./assets/svg/hardpoint.svg" alt="HARDPOINT icon" class="logo-icon">
+                    <p class="logo-text">HARDPOINT</p>
                 </div>
-            <div class="navigation">
-                <div class="nav-item">
-                    <a href="/">home</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#">projects</a>
-                </div>
-                <div class="nav-item">
-                    <a href="./about.html">about</a>
-                </div>
-            </div>
-            <div class="contact">
-                <a href="#">
-                    contact
-                </a>
-            </div>
-        </div>
-        <div class="layout-main">
-            <div class="hero">
-                <p>KEN LIN</p>
-                <p>// SOFTWARE ENGINEER</p>
-                <p>// FRONT-END DEVELOPER</p>
-            </div>
-            <div class="navigation-links">
-                <div class="item">
-                    <div class="numbers number1">
-                        <p>01 /</p>
+                <div class="links">
+                    <div class="link-item">
+                        <a href="/projects.html">PROJECTS</a>
                     </div>
-                    <div class="link link-item1">
-                        <p class="arrow">></p>
-                        <a href="#" class="scramble">PROJECTS</a>
+                    <div class="link-item">
+                        <a href="">ART</a>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="numbers number1">
-                        <p>02 /</p>
+                    <div class="link-item">
+                        <a href="">ABOUT</a>
                     </div>
-                    <div class="link link-item1">
-                        <p class="arrow">></p>
-                        <a href="#" class="scramble">ABOUT</a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="numbers">
-                        <p>03 /</p>
-                    </div>
-                    <div class="link">
-                        <p class="arrow">></p>
-                        <a href="#" class="scramble">CONTACT</a>
+                    <div class="link-item">
+                        <a href="">CONTACT</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="social github">
-                <a href="https://github.com/Solarlake">
-                    <img src="./assets/svg/github.svg" alt="">
-                    <p>Solarlake</p>
-                </a>
-            </div>
-            <div class="social instagram">
-                <a href="https://www.instagram.com/sol.xyz/">
-                    <img src="./assets/svg/instagram.svg" alt="">
-                    <p>@sol.xyz</p>
-                </a>
-            </div>
-            <div class="social linkedin">
-                <a href="https://www.linkedin.com/in/lken/">
-                    <img src="./assets/svg/linkedin.svg" alt="">
-                    <p>/in/lken</p>
-                </a>
-            </div>
-            <div class="text-right">
-                <img src="./assets/svg/dotpoint.svg" alt="">
-            </div>
-        </div>
+        
     </div>
-    
     <script src="./scripts/cursor.js"></script>
-    <script src="./scripts/scramble.js"></script>
-    <script type="module" src="./scripts/background.js"></script>
 </body>
 </html>
-
-
