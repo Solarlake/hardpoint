@@ -1,0 +1,29 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    ::selection {
+        background-color: $text-main;
+        color: $background;
+    }
+
+    font-size: 0.85vw;
+    cursor: default;
+}
+
+body {
+    color: $text-main;
+    background-color: $background;
+    // overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Neue Haas Grotesk Text Pro', Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $text-main;
+    pointer-events: all;
+}

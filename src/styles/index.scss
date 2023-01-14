@@ -1,0 +1,150 @@
+@import "fonts";
+@import "variables";
+@import "globals";
+
+.container-homepage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/_DSC9606_grey.png);
+    // background-image: url(../assets/images/Functionality_09_03B-1800x1013_dark.png);
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .topbar-container {
+        width: 100%;
+        position: absolute;
+        top: 6.24vh;
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 21vw;
+            
+            p {
+                font-weight: 700;
+                font-size: 1.72vh;
+            }
+    
+            .container-topcenter {
+                border: 0.323vh solid #ffffff;
+                border-radius: 100vw;
+                padding: 1.2vh 1.9vw;
+                // height: 4.7362755651vh;
+    
+                p {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    .star {
+        position: absolute;
+        // width: 3.33vw;
+        width: 6.8891280947vh;
+        &.topleft {
+            left: 3.33vw;
+            top: 5.16vh;
+        }
+        &.topright {
+            right: 3.33vw;
+            top: 5.16vh;
+        }
+        &.bottomleft {
+            left: 3.33vw;
+            bottom: 5.16vh;
+        }
+        &.bottomright {
+            right: 3.33vw;
+            bottom: 5.16vh;
+        }
+    }
+
+    .header-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header {
+            font-family: 'Dirtyline36Daysoftype2022', Helvetica, sans-serif;
+            font-size: 21.5vh;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .container-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+    
+            .nav {
+                width: 136.17vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+                .nav-item {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        p {
+                            .line {
+                                transform: scaleY(1);
+                                transform-origin: bottom left;
+                            }
+
+                        }                        
+                    }
+
+                    .dot {
+                        margin-right: 1.61vh;
+                        width: 1.94vh;
+                        height: 1.94vh;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 1.72vh;
+                        position: relative;
+                        
+                        .line {
+                            position: absolute;
+                            bottom: 0px;
+                            left: 0px;
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+                            // background-color: #ffffff;
+                            transform: scaleY(0);
+                            transform-origin: top left;
+                            transition: transform 0.5s $ease-in-out-quart;
+                            mix-blend-mode: difference;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info-container {
+        position: absolute;
+        width: 100%;
+        bottom: 21vh;
+        padding: 0 38.33vw;
+
+        .user-info {
+            text-align: center;
+            font-size: 1.51vh;
+            text-transform: lowercase;
+        }
+
+    }
+}

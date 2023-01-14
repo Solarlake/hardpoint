@@ -1,0 +1,38 @@
+.cursor-base {
+    position: fixed;
+    overflow: visible;
+    width: 0px;
+    height: 0px;
+    pointer-events: none;
+    transform-origin: center;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 2000;
+
+    mix-blend-mode: difference;
+    
+    .cursor-fill {
+        width: 10px;
+        height: 10px;
+
+        background-color: #ffffff;
+        // backdrop-filter: invert(1) hue-rotate(180deg);
+
+        transition: opacity 0.5s cubic-bezier(0.33, 1, 0.68, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.5s cubic-bezier(0.61, 1, 0.88, 1);
+        
+        opacity: 1;
+        transform: scale(1) rotate(45deg);
+        border-radius: 0%;
+
+        &.cursor-hide {
+            opacity: 0;
+            transform: scale(0) rotate(45deg);
+        }
+        &.cursor-large {
+            transition: opacity 0.5s cubic-bezier(0.33, 1, 0.68, 1), transform 0.5s cubic-bezier(0.33, 1, 0.68, 1), border-radius 0.5s cubic-bezier(0.61, 1, 0.88, 1);
+            transform: scale(5) rotate(270deg);
+            border-radius: 50%;
+        }
+    }
+}
